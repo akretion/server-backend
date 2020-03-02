@@ -77,6 +77,7 @@ class ResUsers(models.Model):
             group_ids = []
             role_lines = user.role_line_ids.filtered(
                 lambda rec: rec.is_enabled
+                and (rec.company_id == user.company_id or not rec.company_id)
             )
             for role_line in role_lines:
                 role = role_line.role_id

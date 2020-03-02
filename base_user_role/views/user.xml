@@ -13,6 +13,7 @@
                 <field name="role_line_ids" nolabel="1">
                     <tree editable="bottom" decoration-muted="not is_enabled">
                         <field name="role_id" required="1"/>
+                        <field name="company_id" required="1"/>
                         <field name="date_from"/>
                         <field name="date_to"/>
                         <field name="is_enabled"/>
