@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="group_user_readonly" model="res.groups">
+        <field name="name">Readonly mode</field>
+        <field name="comment">Users from this group can't modify any data</field>
+    </record>
+</odoo>
